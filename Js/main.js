@@ -30,6 +30,8 @@ function addSite(){
 btnSubmit.addEventListener('click',function(){
     if(siteName.classList.contains('is-valid') && websiteURL.classList.contains('is-valid')){
         addSite();
+        siteName.classList.remove('is-valid')
+        websiteURL.classList.remove('is-valid')
     }
     else{
         waringBox.classList.replace('d-none','d-flex')
