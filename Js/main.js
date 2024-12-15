@@ -4,7 +4,7 @@ var btnSubmit=document.querySelector('.btn-submit');
 var btnClose=document.querySelector('#closeBtn');
 var waringBox=document.getElementById('waring-box');
 var nameRegex=/^\w{3,}(\s+\w+)*$/;
-var siteRegex=/^\w{3,}\.\w{2,}$/;
+var siteRegex=/^(https?:\/\/)?(w{3}\.)?\w+\.\w{2,}\/?(:\d{2,5})?(\/\w+)*$/;
 var siteContainer;
 
 if(localStorage.getItem('sites')!=null){
